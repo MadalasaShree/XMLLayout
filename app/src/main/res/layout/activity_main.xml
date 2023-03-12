@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="@string/cost_of_service"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="15dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="142dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:hint="@string/how_was_service"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+    <RadioGroup
+        android:id="@+id/rdGroup"
+        android:layout_width="247dp"
+        android:layout_height="164dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <RadioButton
+            android:id="@+id/rdioAmazing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/amazing" />
+
+        <RadioButton
+            android:id="@+id/rdioGood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/good" />
+
+        <RadioButton
+            android:id="@+id/rdioOkay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/okay" />
+    </RadioGroup>
+
+    <Switch
+        android:id="@+id/switchfound"
+        android:layout_width="354dp"
+        android:layout_height="43dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/rounduptip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rdGroup" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="357dp"
+        android:layout_height="61dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/calculate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switchfound" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="109dp"
+        android:layout_height="49dp"
+        android:layout_marginRight="10dp"
+        android:ems="10"
+        android:hint="@string/tip_amount"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalculate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
